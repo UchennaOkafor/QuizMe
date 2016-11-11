@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="QuizMe.jnlp">
+  <information>
+    <title>QuizMe</title>
+    <vendor>Unknown</vendor>
+    <description>QuizMe</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="QuizMe.jar" size="78909" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="600" height="400" main-class="com.quizme.app.Main"  name="QuizMe" />
+  <update check="background"/>
+</jnlp>

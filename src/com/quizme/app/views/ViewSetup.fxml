@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="318.0" prefWidth="285.0" stylesheets="@../style/core.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.quizme.app.controllers.SetupController">
+   <children>
+      <Button layoutX="104.0" layoutY="273.0" mnemonicParsing="false" onAction="#btnStartOnAction" prefHeight="33.0" prefWidth="77.0" text="Start">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></Button>
+      <ComboBox fx:id="cboTopics" layoutX="66.0" layoutY="40.0" prefHeight="29.0" prefWidth="160.0" />
+      <RadioButton layoutX="66.0" layoutY="87.0" mnemonicParsing="false" text="Easy">
+         <toggleGroup>
+            <ToggleGroup fx:id="difficultyGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="66.0" layoutY="116.0" mnemonicParsing="false" text="Medium" toggleGroup="$difficultyGroup" />
+      <RadioButton layoutX="66.0" layoutY="145.0" mnemonicParsing="false" text="Hard" toggleGroup="$difficultyGroup" />
+      <CheckBox fx:id="chkMultiChoice" layoutX="66.0" layoutY="185.0" mnemonicParsing="false" text="Multichoice" />
+      <Label layoutX="66.0" layoutY="21.0" text="Topic" />
+      <TextField fx:id="txtQuestionAmount" layoutX="65.0" layoutY="237.0" prefHeight="25.0" prefWidth="160.0" />
+      <Label layoutX="65.0" layoutY="218.0" text="Amount" />
+   </children>
+</Pane>

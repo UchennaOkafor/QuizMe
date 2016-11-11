@@ -1,0 +1,38 @@
+.root, .label, .radio-button, .combo-box, .check-box {
+    -fx-font-size: 14;
+}
+
+.text-field, .button, .text-area, .combo-box, .check-box > .box, .check-box   {
+    -fx-background-radius: 1;
+}
+
+#lblQuestion, #lblQuestionProgress {
+    -fx-font-size: 14;
+}
+
+.button {
+    -fx-background-color: #2980b9;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14;
+}
+
+.button:hover {
+    -fx-background-color: #4AA2BD;
+    -fx-cursor: HAND;
+}
+
+.button:pressed {
+    -fx-background-insets: 2 0 2 0, 2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+.check-box {
+    -fx-font-size: 12.5;
+ }
+
+.check-box > .box {
+    -fx-background-color: #34495e;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: white;
+}

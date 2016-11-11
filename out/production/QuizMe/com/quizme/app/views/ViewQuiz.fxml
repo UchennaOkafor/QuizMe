@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="663.0" stylesheets="@../style/core.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.quizme.app.controllers.QuizController">
+   <children>
+      <VBox layoutX="18.0" layoutY="53.0" prefHeight="251.0" prefWidth="236.0" style="-fx-border-color: black;">
+         <children>
+            <ImageView fx:id="imageQuestion" fitHeight="260.0" fitWidth="234.0" pickOnBounds="true" />
+         </children>
+      </VBox>
+      <Label fx:id="lblQuestionProgress" layoutX="18.0" layoutY="22.0" text="Question: 0/0" />
+      <Label fx:id="lblQuestion" layoutX="273.0" layoutY="25.0" text="Question here" />
+      <RadioButton layoutX="282.0" layoutY="282.0" mnemonicParsing="false">
+         <toggleGroup>
+            <ToggleGroup fx:id="groupMultiChoices" />
+         </toggleGroup>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="282.0" layoutY="221.0" mnemonicParsing="false" toggleGroup="$groupMultiChoices">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="282.0" layoutY="156.0" mnemonicParsing="false" toggleGroup="$groupMultiChoices">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="282.0" layoutY="92.0" mnemonicParsing="false" toggleGroup="$groupMultiChoices">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <Button layoutX="567.0" layoutY="320.0" mnemonicParsing="false" onAction="#btnNextOnAction" prefHeight="36.0" prefWidth="76.0" text="Next" />
+      <Separator layoutX="273.0" layoutY="53.0" prefHeight="2.0" prefWidth="369.0" />
+      <TextArea fx:id="txtAnswer" layoutX="273.0" layoutY="153.0" onKeyReleased="#txtAnswerOnKeyReleased" prefHeight="158.0" prefWidth="369.0" promptText="Type your answer here" visible="false" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextArea>
+      <ImageView fx:id="imageViewFeedback" fitHeight="52.0" fitWidth="59.0" layoutX="502.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+   </children>
+</Pane>
