@@ -8,6 +8,7 @@ For shapes, this includes things like drawing the shapes(Rectangle, Square, Tria
 
 The most important part of the system is not just the algorithms that generate and solve these questions, but the object oriented approach used to design this software.
 I ensured that I applied good use of polymorphism, encapsulation, inheritance and abstraction. In addittion to that, I ensured that I followed the SOLID design princepals of object oriented design.
+Read Documentation.pdf to gain a better understanding of the system structure.
 
 ___
 
